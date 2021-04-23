@@ -2,21 +2,22 @@
 using namespace std;
 
 /*CONCEITO DE LISTA LINEAR
-Lista linear: é uma estrutura de dados na qual elementos de um mesmo tipo de dado estão organizados de maneira sequencial.
-Não necessariamente, estes elementos estão fisicamente em sequência, mas a idéia é que exista uma ordem lógica entre eles.
-Cada elemento da lista é chamado de nó, ou nodo.
-
+Lista linear: é uma estrutura de dados na qual elementos de um mesmo tipo de dado estão organizados de maneira sequencial.Não necessariamente, estes elem-
+entos estão fisicamente em sequência, mas a idéia é que exista uma ordem lógica entre eles. Cada elemento da lista é chamado de nó, ou nodo.
 Tipos de Listas Lineares; Pilhas e Filas.
 __________________________________________________________________________________________________________________________________________________________
 **Alocação de uma lista**
 
-1--Sequencial ou Contígua;
-Numa lista linear contígua, os elementos(nós) além de estarem em uma sequência lógica, estão também fisicamente em sequência.
-A maneira mais simples de acomodar uma lista linear em um computador é através da utilização de um vetor.
-A representação por vetor explora a sequencialidade da memória de tal forma que os nós de uma lista sejam armazenados em endereços contíguos.
+1--Alocação Sequencial/Estática/Contígua;
+Numa lista linear contígua, os elementos(nós) além de estarem em uma sequência lógica, estão também fisicamente em sequência. A maneira mais simples de ac-
+omodar uma lista linear em um computador é através da utilização de um vetor. A representação por vetor explora a sequencialidade da memória de tal forma 
+que os nós de uma lista sejam armazenados em endereços contíguos.
 
-2--Encadeada
+2--Alocação Encadeada/Dinâmica/Ligada
 Os elementos não estão necessariamente armazenados sequencialmente na memória, porém a ordem lógica entre os elementos que compõem a lista deve ser mantida.
+Nesse tipo de alocação, as posições da memória são alocadas(ou desalocadas) na medida em que são necessárias. Os nós de uma lista encontram-se então aleató-
+riamente dispostos na memória e são interligados por ponteiros, que indicam a posição do próximo elemento da tabela. É necessário o acréscimo de um campo a
+cada nó, justamente o que indica o endereçõ do próximo nó da lista.
 ___________________________________________________________________________________________________________________________________________________________
 Bibliografia
 *Estruturas De Dados E Seus Algoritmos
