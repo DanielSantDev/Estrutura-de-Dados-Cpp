@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1619116594 source:d:\desktop\estrutura de dados_c++\01-lista_linear\main.cpp
+	<iostream>
+	<stack>
+	<queue>
+
