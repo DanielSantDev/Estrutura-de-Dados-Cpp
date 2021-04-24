@@ -1,29 +1,50 @@
 #include <iostream>
 using namespace std;
 
-/*CONCEITO DE LISTA LINEAR
-Lista linear: é uma estrutura de dados na qual elementos de um mesmo tipo de dado estão organizados de maneira sequencial.Não necessariamente, estes elem-
-entos estão fisicamente em sequência, mas a idéia é que exista uma ordem lógica entre eles. Cada elemento da lista é chamado de nó, ou nodo.
-Tipos de Listas Lineares; Pilhas e Filas.
+/*
+*TIPO ABSTRATO DE DADO (TAD):
+
+-TIPO ABSTRATO DE DADOS É UM CONJUNTO DE VALORES E UMA SEQUÊNCIA DE OPERAÇÕES SOBRE ESTES VALORES. ESTE CONJUNTO E ESTAS OPERAÇÕES FORMAM UMA CONSTRUÇÃO
+MATEMÁTICA QUE PODE SER IMPLEMENTADA USANDO DETERMINADA ESTRUTURA DE DADOS DO HARDWARE OU DO SOFTWARE.
+
+*ESTRUTURA DE DADOS (ED):
+
+-ESTRUTURA DE DADOS É A IMPLEMENTAÇÃO DE UM TIPO ABSTRATOS DE DADOS. AS ESTRUTURAS DEFINEM A ORGANIZAÇÃO, MÉTODOS DE ACESSO E OPÇÕES DE PROCESSAMENTO PARA
+A INFORMAÇÃO MANIPULADA PELO PROGRAMA.
 __________________________________________________________________________________________________________________________________________________________
-**Alocação de uma lista**
 
-1--Alocação Sequencial/Estática/Contígua;
-Numa lista linear contígua, os elementos(nós) além de estarem em uma sequência lógica, estão também fisicamente em sequência. A maneira mais simples de ac-
-omodar uma lista linear em um computador é através da utilização de um vetor. A representação por vetor explora a sequencialidade da memória de tal forma 
-que os nós de uma lista sejam armazenados em endereços contíguos.
+*CONCEITO DE LISTA LINEAR:
 
-2--Alocação Encadeada/Dinâmica/Ligada
-Os elementos não estão necessariamente armazenados sequencialmente na memória, porém a ordem lógica entre os elementos que compõem a lista deve ser mantida.
-Nesse tipo de alocação, as posições da memória são alocadas(ou desalocadas) na medida em que são necessárias. Os nós de uma lista encontram-se então aleató-
-riamente dispostos na memória e são interligados por ponteiros, que indicam a posição do próximo elemento da tabela. É necessário o acréscimo de um campo a
-cada nó, justamente o que indica o endereçõ do próximo nó da lista.
+-LISTA LINEAR: É UMA ESTRUTURA DE DADOS NÃO PRIMITIVA, NA QUAL  AGRUPA INFORMAÇÕES REFERENTES A UM CONJUNTO DE ELEMENTOS QUE, DE ALGUMA FORMA, SE RELACIO-
+NAM ENTRE SI. SÃO INÚMEROS OS TIPOS DE DADOS QUE PODEM SER DESCRITOS POR LISTAS LINEARES. NAS LISTAS LINEARES OS ELEMENTOS DE UM MESMO TIPO DE DADO ESTÃO
+ORGANIZADOS DE MANEIRA SEQUENCIAL. NÃO NECESSARIAMENTE, ESTES ELEMENTOS ESTÃO FISICAMENTE EM SEQUÊCIA, MAS A IDÉIA É QUE EXISTA UMA ORDEM LÓGICA ENTRE ELES.
+-CADA ELEMENTO DA LISTA É CHAMADO DE NÓ, OU NODO.
+-AS OPERAÇÕES MAIS FREQUENTES SÃO A DE BUSCA, INCLUSÃO E REMOÇÃO.
+-EXEMPLO DE TIPOS DE LISTAS LINEARES; PILHAS E FILAS.
+__________________________________________________________________________________________________________________________________________________________
+
+**ALOCAÇÃO DE UMA LISTA;
+
+1--ALOCAÇÃO SEQUENCIAL/ESTÁTICA/CONTÍGUA;
+
+NUMA LISTA LINEAR CONTÍGUA, OS ELEMENTOS(NÓS) ALÉM DE ESTAREM EM UMA SEQUÊNCIA LÓGICA, ESTÃO TAMBÉM FISICAMENTE EM SEQUÊNCIA. A MANEIRA MAIS SIMPLES DE AC-
+OMODAR UMA LISTA LINEAR EM UM COMPUTADOR É ATRAVÉS DA UTILIZAÇÃO DE UM VETOR. A REPRESENTÇÃO POR VETOR EXPLORA A SEQUENCIALIDADE DA MEMÓRIA DE TAL FORMA
+QUE OS NÓS DE UMA LISTA SEJAM ARMAZENADOS EM ENDEREÇOS CONTÍGUOS.
+
+2--ALOCAÇÃO ENCADEADA/DINÂMICA/LIGADA;
+
+OS ELEMENTOS NÃO ESTÃO NECESSARIAMENTE ARMAZENADOS SEQUENCIALMENTE NA MEMÓRIA, PORÉM A ORDEM LÓGICA ENTRE OS ELEMENTOS QUE COMPÕEM A LISTA DEVE SER MANTIDA.
+NESSE TIPO DE ALOCAÇÃO, AS POSIÇÕES DA MEMÓRIA SÃO ALOCADAS(OU DESALOCADAS) NA MEDIDA EM QUE SÃO NECESSÁRIAS. OS NÓS DE UMA LISTA ENCONTRAM-SE ENTÃO ALEATÓ-
+RIAMENTE DISPOSTOS NA MEMÓRIA E SÃO INTERLIGADOS POR PONTEIROS, QUE INDICAM A POSIÇÃO DO PRÓXIMO ELEMENTO DA TABELA. É NECESSÁRIO O ACRÉSCIMO DE UM CAMPO A
+CADA NÓ, JUSTAMENTE O QUE INDICA O ENDEREÇO DO PRÓXIMO NÓ DA LISTA.
 ___________________________________________________________________________________________________________________________________________________________
+
 Bibliografia
 *Estruturas De Dados E Seus Algoritmos
 SZWARCFITER, Jayme Luiz; Markenzon, Lilian
 Editora LCT*
 ___________________________________________________________________________________________________________________________________________________________
+
 Pesquisa e Códigos feitos por Daniel Santana.
 
 GitHub: github.com/DanielSantDev
@@ -31,14 +52,14 @@ E-mail: daniel10gja@gmail.com
 Linkedin: linkedin.com/in/ddanielssantana/
 Instagram: instagram.com/daniel_san.t/
 
-*/
+___________________________________________________________________________________________________________________________________________________________
 
-/*ESCOLHA O ALGORITMO DE ESTRUTURA DE DADOS QUE DESEJA:
+**ESCOLHA O ALGORITMO DE ESTRUTURA DE DADOS QUE DESEJA:
 *Pilha1 OU Pilha2
 *Fila1 OU Fila2
 *Lista
 */
-#define Pilha1
+#define Pilha2
 
 
 #ifdef Pilha1
