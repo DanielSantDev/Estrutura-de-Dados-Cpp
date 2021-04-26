@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1616758698 source:f:\0_fatec\4estrut_dados_ads\0ads_ed_2021\implementacao\pilha_aloc_ligada_2021_1m\main.cpp
+	<iostream>
+
+1616765231 source:e:\documentos\ads fatec\3 - semestre\estrutura de dados\aula 06\pilha_aloc_ligada_2021_1m\main.cpp
+	<iostream>
+	"pilhaligada.h"
+
+1616765050 e:\documentos\ads fatec\3 - semestre\estrutura de dados\aula 06\pilha_aloc_ligada_2021_1m\pilhaligada.h
+

@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1615553553 source:f:\0_fatec\4estrut_dados_ads\0ads_ed_2021\implementacao\fila em aloc sequencial 2021_m\main.cpp
+	<iostream>
+
+1619398935 source:e:\documentos\ads fatec\3 - semestre\estrutura de dados\aula 04\fila em aloc sequencial 2021_m\main.cpp
+	<iostream>
+	"filaalocaosequencial.h"
+
+1619396519 e:\documentos\ads fatec\3 - semestre\estrutura de dados\aula 04\fila em aloc sequencial 2021_m\filaalocaosequencial.h
+
