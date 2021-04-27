@@ -2,6 +2,16 @@
 #include "filaligada.h"
 
 /*
+Pesquisa e Códigos feitos por Daniel Santana.
+
+GitHub: github.com/DanielSantDev
+E-mail: daniel10gja@gmail.com
+Linkedin: linkedin.com/in/ddanielssantana/
+Instagram: instagram.com/daniel_san.t/
+
+*/
+
+/*
 ***ALOCAÇÃO ENCADEADA/DINÂMICA/LIGADA***
 
     OS ELEMENTOS NÃO ESTÃO NECESSARIAMENTE ARMAZENADOS SEQUENCIALMENTE NA MEMÓRIA,
@@ -45,6 +55,10 @@ POLÍTICA DE MANIPULAÇÃO DOS ELEMENTOS DA LISTA
     **A SEGUIR, TEMOS UMA IMPLEMENTAÇÃO DE UMA FILA COM ALOCAÇÃO LIGADA EM C++.
     **A FILA E SUAS RESPECTIVAS FUNÇÕES DE MANIPULAÇÃO SE ENCONTRAM NO ARQUIVO HEADER (filaligada.h).
 
+    Bibliografia
+    *Estruturas De Dados E Seus Algoritmos
+    SZWARCFITER, Jayme Luiz; Markenzon, Lilian
+    Editora LCT*
 
 */
 

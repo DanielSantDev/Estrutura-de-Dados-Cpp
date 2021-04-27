@@ -1,6 +1,8 @@
 #ifndef PILHAALOCASEQ_H_INCLUDED
 #define PILHAALOCASEQ_H_INCLUDED
 
+//OBS.:
+//O código se encontra todo comentado por se tratar de um material de estudo, pesquisa e revisão.
 
 template <typename Tipo> //onde Tipo é um tipo Generico de dado
 class Pilha{

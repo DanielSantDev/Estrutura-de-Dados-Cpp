@@ -1,29 +1,31 @@
 #ifndef PILHALIGADA_H_INCLUDED
 #define PILHALIGADA_H_INCLUDED
+
 template <typename Tipo>
-struct Node{
+struct Node {
     Tipo info;
     Node<Tipo> *prox;
 };
 
 template <typename Tipo>
-class Pilha{
+class Pilha {
 private:
     Node<Tipo> *topo;//Declara a struct Node
 
 public:
-    Pilha(){
+
+    Pilha() {
        topo = NULL;
     }
 
     //Inserção de um elemento no topo
-    bool empilha(Tipo x){
+    bool empilha(Tipo x) {
        bool v = true;
        Node<Tipo> *aux=new Node<Tipo>;
-       if(aux == NULL){
+       if(aux == NULL) {
         v = false;
        }
-       else{
+       else {
             aux->info = x;
             aux->prox = topo;
             topo = aux;
@@ -32,7 +34,7 @@ public:
     }
 
     //Remoção do elemento do Topo
-    Tipo desempilha(){
+    Tipo desempilha() {
         Tipo temp = topo->info;
         Node<Tipo> *aux = topo;
         topo = topo->prox;
@@ -40,17 +42,17 @@ public:
         return temp;
     }
 
-    Tipo elementodotopo(){
+    Tipo elementodotopo() {
         return topo->info;
     }
 
     /*O nó descritor está inicialmente vazio, seu campo next tem o valor nulo.
     Assim, um procedimento para verificar se a lista está vazia deve verificar o valor desse campo*/
-    bool pilhavazia(){
+    bool pilhavazia() {
         return topo == NULL;
     }
 
-    Node<Tipo> *getTopo(){
+    Node<Tipo> *getTopo() {
         return topo;
     }
 

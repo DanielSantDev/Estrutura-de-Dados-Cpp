@@ -1,5 +1,20 @@
+/*
+Códigos Desenvolvidos por Daniel Santana.
+
+ME ACOMPANHE PELAS REDES:
+
+GITHUB: github.com/DanielSantDev
+LINKEDIN: linkedin.com/in/ddanielssantana/
+INSTAGRAM: instagram.com/daniel_san.t/
+
+ENTRE EM CONTATO:
+
+E-mail: daniel10gja@gmail.com
+
+*/
+
 #include <iostream>
-#include "filaalocaosequencial.h"
+#include "FilaAlocacaoSequencial.h"
 
 using namespace std;
 

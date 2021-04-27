@@ -1,5 +1,15 @@
 #include <iostream>
-#include "pilhaligada.h"
+#include "PilhaLigada.h"
+
+/*
+Pesquisa e Códigos feitos por Daniel Santana.
+
+GitHub: github.com/DanielSantDev
+E-mail: daniel10gja@gmail.com
+Linkedin: linkedin.com/in/ddanielssantana/
+Instagram: instagram.com/daniel_san.t/
+
+*/
 
 /*
 ***ALOCAÇÃO ENCADEADA/DINÂMICA/LIGADA***
@@ -44,16 +54,25 @@ POLÍTICA DE MANIPULAÇÃO DOS ELEMENTOS DA LISTA
 
     **A SEGUIR, TEMOS UMA IMPLEMENTAÇÃO DE UMA PILHA COM ALOCAÇÃO LIGADA EM C++.
     **A PILHA E SUAS RESPECTIVAS FUNÇÕES DE MANIPULAÇÃO SE ENCONTRAM NO ARQUIVO HEADER (pilhaligada.h).
+
+    Bibliografia
+    *Estruturas De Dados E Seus Algoritmos
+    SZWARCFITER, Jayme Luiz; Markenzon, Lilian
+    Editora LCT*
+
 */
 
 using namespace std;
 
-int main()
-{
-    cout << "PILHA COM ALOCACAO LIGADA\n" << endl;
+int main() {
+
     Pilha<int> p;
     int x, opc;
-    do{
+
+    cout << "PILHA COM ALOCACAO LIGADA\n" << endl;
+
+    do {
+
         cout<<"\n1 - EMPILHAR."<<endl;
         cout<<"2 - DESEMPILHAR."<<endl;
         cout<<"3 - ELEMENTO DO TOPO."<<endl;
@@ -61,50 +80,57 @@ int main()
         cout<<"5 - FIM"<<endl;
         cout<<"SELECIONE: ";
         cin>>opc;
-        switch(opc){
+
+        switch(opc) {
+
         case 1:
             cout<<"DIGITE O VALOR:";
             cin>>x;
-            if (p.empilha(x)){
+            if ( p.empilha(x) ) {
                 cout<<"SUCESSO!"<<endl;
             }
             else{
                 cout<<"PILHA CHEIA."<<endl;
             }
             break;
+
         case 2:
-            if(p.pilhavazia()){
+            if( p.pilhavazia() ) {
                 cout<<"PILHA VAZIA."<<endl;
             }
-            else{
+            else {
                 cout<<"DESEMPILHA:"<<p.desempilha()<<endl;
             }
             break;
+
         case 3:
-            if(p.pilhavazia()){
+            if( p.pilhavazia() ) {
                 cout<<"PILHA VAZIA."<<endl;
             }
-            else{
+            else {
                 cout<<"ELEMENTO DO TOPO:"<<p.elementodotopo()<<endl;
             }
             break;
+
         case 4:
             cout<<"ELEMENTOS DA PILHA: ";
-            if(p.pilhavazia()){
+            if( p.pilhavazia() ) {
                 cout<<"PILHA VAZIA."<<endl;
             }
-            else{
+            else {
                Node<int> *aux = p.getTopo();
-               while(aux != NULL){
+               while(aux != NULL) {
                  cout<<aux->info<< " ";
                  aux = aux->prox;
                }
                cout<<endl;
             }
             break;
+
         case 5:
             cout<<"FIM."<<endl;
             break;
+
         default:
             cout<<"OPCAO INVALIDA."<<endl;
             break;
