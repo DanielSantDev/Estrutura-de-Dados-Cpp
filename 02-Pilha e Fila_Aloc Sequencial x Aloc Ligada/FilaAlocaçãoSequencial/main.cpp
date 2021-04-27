@@ -38,7 +38,7 @@ int main() {
 
         case 2:
             if( f.filavazia() ) {
-                cout<<"Fila vazia"<<endl;
+                cout<<"FILA VAZIA"<<endl;
             }
             else {
                 cout<<"O NUMERO: "<<f.remover()<<", FOI REMOVIDO COM SUCESSO!"<<endl;
@@ -56,18 +56,25 @@ int main() {
 
         case 4:
             if( f.filavazia() ) {
-                cout<<"FILA VAZIA."<<endl;
+                cout<<"A ESTAH FILA VAZIA."<<endl;
             }
             else {
                 cout<<"ELEMENTOS DA FILA: "<<endl;
-                for( int i = f.getInic() ; i < f.getTamanho() ; i++ ){
+                if(f.getInic() <= f.getFim()) {
+                for( int i = f.getInic() ; i <= f.getFim() ; i++ ) {
                     cout<<f.getValor(i)<< " | ";
-                    if (i == f.getTamanho()){
-                        i=0;
                     }
                 }
-                cout<<"\n\n";
+                else {
+                    for( int i=f.getInic() ; i<f.getTamanho() ; i++ ) {
+                        cout<<f.getValor(i)<<" | ";
+                    }
+                    for( int i=0 ; i<=f.getFim() ; i++ ) {
+                        cout<<f.getValor(i)<<" | ";
+                    }
+                }
             }
+            cout<<"\n";
             break;
 
         case 5:
