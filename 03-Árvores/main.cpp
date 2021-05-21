@@ -32,9 +32,9 @@ int main()
             break;
 
         case 2:
-            cout<<"DIGITE O ELEMENTO A SER REMOVIDO: ";
+            /*cout<<"DIGITE O ELEMENTO A SER REMOVIDO: ";
             cin>>valor;
-
+            t1.Remover(t1.pRaiz,valor);*/
             break;
 
         case 3:
@@ -53,13 +53,13 @@ int main()
             break;
 
         case 6:
-            cout<<"EXIBIR O VALOR MAXIMO: "<<endl;
-            t1.valorMaximo(t1.pRaiz);
+            cout<<"EXIBIR O VALOR MAXIMO: "<<t1.valorMaximo(t1.pRaiz);
+
             break;
 
         case 7:
-            cout<<"EXIBIR O VALOR MINIMO: "<<endl;
-            t1.valorMinimo(t1.pRaiz);
+            cout<<"EXIBIR O VALOR MINIMO: "<<t1.valorMinimo(t1.pRaiz);
+
             break;
 
         case 0:
@@ -69,6 +69,8 @@ int main()
             cout<<"TENTE NOVAMENTE."<<endl;
             break;
         }
+
     }
+
     return 0;
 }

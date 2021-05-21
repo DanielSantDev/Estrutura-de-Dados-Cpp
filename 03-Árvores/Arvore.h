@@ -11,6 +11,8 @@ struct Node {
     Node<Tipo> *pDir;
 };
 
+
+
 template <typename Tipo>
 struct Bst {
 
@@ -61,37 +63,51 @@ struct Bst {
             }
     }
 
-    Tipo valorMaximo(Node<Tipo> *t) {
-        if(t == NULL) {
-            return NULL;
-        }else {
-            if(t->pDir == NULL) {
-                return t->info;
-                }else {
-                    return t->pDir = valorMinimo(t->pDir);
-                }
+    int valorMaximo(Node<Tipo> *t) {
+        if(t!=NULL) {
+            Node<Tipo> *aux;
+            aux=t;
+            while(aux->pDir!=NULL) {
+                aux = aux->pDir;
+            }
+            return aux->info;
         }
+        return 0;
     }
 
-    Tipo valorMinimo(Node<Tipo> *t) {
-        if(t == NULL) {
-            return NULL;
-        }else {
-            if(t->pEsq == NULL) {
-                return t->info;
-                }else {
-                    return t->pEsq = valorMinimo(t->pEsq);
-                }
+
+    int valorMinimo(Node<Tipo> *t) {
+        if(t!=NULL) {
+            Node<Tipo> *aux;
+            aux=t;
+            while(aux->pEsq!=NULL) {
+                aux = aux->pEsq;
             }
+            return aux->info;
         }
+        return 0;
+    }
 
-    /*void Remover(Num, Node<Tipo> *t) {
-        if( t == null){
-            return NULL;
+    /*int Remover(Node<Tipo> *t,Tipo x) {
+        Node<Tipo> *aux;
+        aux=t;
+        if(t!=NULL) {
+                if(x < aux->info) {
+                    aux->pEsq = Remover(aux->pEsq, x);
+                } else
+                if(x > aux->info) {
+                    aux->pDir = Remover(aux->pDir, x);
+                } else
+                if(aux->pEsq == NULL) {
+                    return aux->pDir;
+                } else
+                if(aux->pDir == NULL) {
+                    return aux->pEsq;
+                } else {
+                return aux;
+                }
         }
-
     }*/
-
 
 };
 
