@@ -38,28 +38,28 @@ int main()
             break;
 
         case 3:
-            cout<<"EXIBINDO A ARVORE EM PRE-ORDEM:"<<endl;
+            cout<<"EXIBINDO A ARVORE EM PRE-ORDEM: "<<endl;
             t1.preOrdem(t1.pRaiz);
             break;
 
         case 4:
-            cout<<"EXIBINDO A ARVORE EM POS-ORDEM:"<<endl;
+            cout<<"EXIBINDO A ARVORE EM POS-ORDEM: "<<endl;
             t1.posOrdem(t1.pRaiz);
             break;
 
         case 5:
-            cout<<"EXIBINDO A ARVORE EM ORDEM:"<<endl;
+            cout<<"EXIBINDO A ARVORE EM ORDEM: "<<endl;
             t1.emOrdem(t1.pRaiz);
             break;
 
         case 6:
-            cout<<"EXIBIR O MAXIMO DOS NUMEROS:"<<endl;
-
+            cout<<"EXIBIR O VALOR MAXIMO: "<<endl;
+            t1.valorMaximo(t1.pRaiz);
             break;
 
         case 7:
-            cout<<"EXIBIR O MINIMO DOS NUMEROS:"<<endl;
-
+            cout<<"EXIBIR O VALOR MINIMO: "<<endl;
+            t1.valorMinimo(t1.pRaiz);
             break;
 
         case 0:
@@ -69,9 +69,6 @@ int main()
             cout<<"TENTE NOVAMENTE."<<endl;
             break;
         }
-
     }
-
-
     return 0;
 }

@@ -13,10 +13,13 @@ struct Node {
 
 template <typename Tipo>
 struct Bst {
+
     Node<Tipo> *pRaiz;
+
     Bst() {
         pRaiz=NULL;
     }
+
     void insere(Node<Tipo> *&t,Tipo x) {
         if(t==NULL) {
             t=new Node<Tipo>;
@@ -50,7 +53,7 @@ struct Bst {
             }
     }
 
-    void emOrdem(Node<Tipo> *t){
+    void emOrdem(Node<Tipo> *t) {
             if(t!=NULL) {
                 emOrdem(t->pEsq);
                 cout<<t->info<<" ";
@@ -58,12 +61,34 @@ struct Bst {
             }
     }
 
-   /* void Remove() {
-        if(pRaiz==null) //se arvore estiver vazia
-            return 0;
+    Tipo valorMaximo(Node<Tipo> *t) {
+        if(t == NULL) {
+            return NULL;
+        }else {
+            if(t->pDir == NULL) {
+                return t->info;
+                }else {
+                    return t->pDir = valorMinimo(t->pDir);
+                }
+        }
+    }
 
-        *pRaiz =
+    Tipo valorMinimo(Node<Tipo> *t) {
+        if(t == NULL) {
+            return NULL;
+        }else {
+            if(t->pEsq == NULL) {
+                return t->info;
+                }else {
+                    return t->pEsq = valorMinimo(t->pEsq);
+                }
+            }
+        }
 
+    /*void Remover(Num, Node<Tipo> *t) {
+        if( t == null){
+            return NULL;
+        }
 
     }*/
 
