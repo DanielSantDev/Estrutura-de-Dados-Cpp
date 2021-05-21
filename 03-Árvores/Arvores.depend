@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1621559770 source:e:\documentos\ads fatec\3 - semestre\estrutura de dados\estrutura de dados_c++\estrutura-de-dados-cpp\03-Árvores\main.cpp
+	<iostream>
+	"Arvore.h"
+
+1621558549 e:\documentos\ads fatec\3 - semestre\estrutura de dados\estrutura de dados_c++\estrutura-de-dados-cpp\03-Árvores\arvore.h
+	<iostream>
+
