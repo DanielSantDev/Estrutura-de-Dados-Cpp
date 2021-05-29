@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1622250064 source:d:\desktop\listaordenada\main.cpp
+	<iostream>
+	"Lista_Ordenada.h"
+
+1622250704 d:\desktop\listaordenada\lista_ordenada.h
+
