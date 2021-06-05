@@ -32,9 +32,9 @@ int main()
             break;
 
         case 2:
-            /*cout<<"DIGITE O ELEMENTO A SER REMOVIDO: ";
+            cout<<"DIGITE O ELEMENTO A SER REMOVIDO: ";
             cin>>valor;
-            t1.Remover(t1.pRaiz,valor);*/
+            t1.Remover(t1.pRaiz,valor);
             break;
 
         case 3:

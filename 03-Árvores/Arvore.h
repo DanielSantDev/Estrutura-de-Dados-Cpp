@@ -63,6 +63,32 @@ struct Bst {
             }
     }
 
+    int Remover(Node<Tipo>*&t, int valor) {
+        Node<Tipo>*temp = NULL;
+        if(t == NULL) {
+            return 0;
+        }
+        if(valor == t->info) {
+            temp = t;
+            if(pRaiz->pEsq == NULL)
+                t = t->pDir;
+            else if(t->pDir == NULL)
+                t = t->pEsq;
+            else
+            {
+                t = temp;
+            }
+            delete temp;
+            return 1;
+        }
+        else if(valor < t->info) {
+            return Remover(t->pEsq, valor);
+        }
+        else {
+            return Remover(t->pDir, valor);
+        }
+    }
+
     int valorMaximo(Node<Tipo> *t) {
         if(t!=NULL) {
             Node<Tipo> *aux;
