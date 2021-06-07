@@ -33,7 +33,7 @@ int main()
                 cout<<"A TABELA ESTAH VAZIA"<<endl;
                 cout<<"DIGITE O ELEMENTO A SER BUSCADO: ";
                 cin>>num;
-                HT.BuscarElemento(num);
+                //HT.BuscarElemento(num);
                 break;
 
             case 3:

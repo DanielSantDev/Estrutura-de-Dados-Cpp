@@ -44,23 +44,18 @@ struct Hash {
         }
     }
 
-    int BuscarElemento(int num) {
-        Node *aux;
-        for(h ; h!=NULL ; h = aux->prox) {
-            if(aux->info == num) {
-                return aux->info;
-            }else {
-                return NULL; // caso ñ haja elementos
-            }
-        }
-    }
+    /*int BuscarElemento(int a[], int x) {
+        int k;
+        k = ;
+        if (a[k] == x) return k;
+        return –1;
+    }*/
 
-    /*void Remover(int x) {
-        int temp = h->info;
-        int *aux=h;
-        h = h->prox;
-        delete aux;
-        return temp;
+    /*void Remover(int num) {
+        Node x = BuscarElemento(num);
+        if(x == p) {
+
+        }
     }*/
 
 };
