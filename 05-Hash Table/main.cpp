@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     cout<<" *** TABELA HASHING *** "<<endl;
-    Hash<int> HT;
+    Hash HT;
 
     int opc, num;
 
@@ -33,26 +33,26 @@ int main()
                 cout<<"A TABELA ESTAH VAZIA"<<endl;
                 cout<<"DIGITE O ELEMENTO A SER BUSCADO: ";
                 cin>>num;
-                //dh.Buscar(num)
+                HT.BuscarElemento(num);
                 break;
 
             case 3:
                 cout<<"DIGITE O ELEMENTO: "<<endl;
                 cin>>num;
-                HT.Remover(num);
+                //HT.Remover(num);
                 break;
 
             case 4:
                 cout<<"TABELA HASH: "<<endl;
-                    for(int i=0;i < W;i++){
-                        Node<Tipo> *aux =  HT.h[i];
-                        cout<<"h[ "<<i<<" ]->";
-                        while(aux != NULL){
-                            cout<<aux->info<<"->";
-                            aux = aux->prox;
-                        }
-                        cout<<endl;
+                for (int i=0;i < W;i++){
+                    Node *aux = HT.h[i];
+                    cout<<"H[ "<<i<<" ]->";
+                    while(aux !=NULL){
+                        cout<<aux->info<<"->";
+                        aux = aux->prox;
                     }
+                    cout<<endl;
+                }
                 break;
 
             case 5:

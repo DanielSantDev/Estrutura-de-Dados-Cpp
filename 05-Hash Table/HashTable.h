@@ -3,18 +3,16 @@
 
 #define W 5
 
-template <typename Tipo>
-struct Node {
-    Tipo info;
-    Node<Tipo> *prox;
+struct Node{
+    int info;
+    Node *prox;
 };
 
-template <typename Tipo>
 struct Hash {
-    Node<Tipo> *h[W];
+    Node *h[W];
 
     Hash(){
-        for( i=0;i<W;i++) {
+        for (int i=0;i < W; i++){
             h[i] = NULL;
         }
     }
@@ -27,12 +25,12 @@ struct Hash {
         return h[lista]==NULL;
     }
 
-    void Insere(Tipo x) {
-        Node<Tipo> *aux2;
-        Node<Tipo> *aux = new Node<Tipo>;
+    void Insere(int x) {
+        Node *aux2;
+        Node *aux = new Node;
         aux->info = x;
         int p = fht(x);
-        if (h[p] == NULL || x<=h[p]->info) {
+        if (h[p] == NULL || x <= h[p]->info) {
             aux->prox = h[p];
             h[p] = aux;
         }
@@ -46,15 +44,24 @@ struct Hash {
         }
     }
 
-    Tipo Remover() {
-        Tipo temp=h->info;
-        Node<Tipo> *aux=h;
+    int BuscarElemento(int num) {
+        Node *aux;
+        for(h ; h!=NULL ; h = aux->prox) {
+            if(aux->info == num) {
+                return aux->info;
+            }else {
+                return NULL; // caso ñ haja elementos
+            }
+        }
+    }
+
+    /*void Remover(int x) {
+        int temp = h->info;
+        int *aux=h;
         h = h->prox;
         delete aux;
         return temp;
-    }
-
-
+    }*/
 
 };
 
