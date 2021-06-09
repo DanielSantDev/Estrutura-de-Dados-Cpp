@@ -1,7 +1,7 @@
 #ifndef HASHTABLE_H_INCLUDED
 #define HASHTABLE_H_INCLUDED
 
-#define W 5
+#define W 37
 
 struct Node{
     int info;
@@ -17,8 +17,9 @@ struct Hash {
         }
     }
 
+    //função de espalhamento
     int fht(int x) {
-        return x % W;
+        return x % W; //chave % tamanho
     }
 
     bool ListaVazia(int lista) {
@@ -44,18 +45,15 @@ struct Hash {
         }
     }
 
-    /*int BuscarElemento(int a[], int x) {
-        int k;
+    /*int BuscarElemento() {
+        Node *au;
         k = ;
         if (a[k] == x) return k;
         return –1;
-    }*/
+    }
 
-    /*void Remover(int num) {
-        Node x = BuscarElemento(num);
-        if(x == p) {
+    bool Remover(){
 
-        }
     }*/
 
 };

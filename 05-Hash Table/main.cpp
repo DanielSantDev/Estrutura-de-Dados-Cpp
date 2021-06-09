@@ -23,14 +23,14 @@ int main()
         switch(opc)
         {
             case 1:
-                cout<<"DIGITE O ELEMENTO";
+                cout<<"DIGITE O ELEMENTO: ";
                 cin>>num;
                 HT.Insere(num);
                 cout<<"O NUMERO "<<num<<", FOI INSERIDO!"<<endl;
                 break;
 
             case 2:
-                cout<<"A TABELA ESTAH VAZIA"<<endl;
+                cout<<"A TABELA ESTAH VAZIA!"<<endl;
                 cout<<"DIGITE O ELEMENTO A SER BUSCADO: ";
                 cin>>num;
                 //HT.BuscarElemento(num);
