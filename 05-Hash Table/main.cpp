@@ -30,16 +30,23 @@ int main()
                 break;
 
             case 2:
-                cout<<"A TABELA ESTAH VAZIA!"<<endl;
                 cout<<"DIGITE O ELEMENTO A SER BUSCADO: ";
                 cin>>num;
-                //HT.BuscarElemento(num);
+                if(HT.BuscarElemento(num) != -1){
+                    int lista = HT.BuscarElemento(num);
+                    cout<<"\n\t    h[" <<lista<<"]-> " <<num;
+                }
+                else
+                {
+                    cout<<"O ELEMENTO Ñ FOI ENCONTRADO!";
+                }
+
                 break;
 
             case 3:
                 cout<<"DIGITE O ELEMENTO: "<<endl;
                 cin>>num;
-                //HT.Remover(num);
+                HT.Remover(num);
                 break;
 
             case 4:
@@ -57,6 +64,7 @@ int main()
 
             case 5:
                 cout<<"FIM DO PROGRAMA";
+                return 0;
                 break;
 
             default:
@@ -65,7 +73,4 @@ int main()
         }
 
     }while(opc!=5);
-
-    return 0;
-
 }
